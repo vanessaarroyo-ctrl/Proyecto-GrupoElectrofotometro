@@ -119,21 +119,12 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 
 # **Repositorio — Estructura Propuesta**
 
-├── src/
-│ ├── funciones.cpp
-│ ├── main.ino
-│ └── tareas FreeRTOS
-├── inc/
-│ └── funciones.h
-├── img/
-│ ├── arquitectura_espectrofotometro.png
-│ ├── fsm.png
-│ └── fotos_prototipo/
-├── docs/
-│ ├── Informe.pdf
-│ ├── Presentación.pdf
-│ └── Diagramas teóricos
-└── README.md
+<h2 align="center">Diagrama FSM</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/estructurarepositorio.png" width="700">
+</p>
+
 
 
 ---
