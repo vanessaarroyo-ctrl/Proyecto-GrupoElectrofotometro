@@ -20,7 +20,6 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 
 # Arquitectura del Sistema 
 
-![Arquitectura del sistema](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/ARQUITECTURA.jpg)
 
 
 <h2 align="center">Arquitectura del Sistema</h2>
@@ -33,8 +32,6 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 
 # **Diagrama FSM**
 Todavia no se termno de elaborar el sistema
-
-![Diagrama FSM](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/FSM.jpeg)
 
 <h2 align="center">Diagrama FSM</h2>
 
