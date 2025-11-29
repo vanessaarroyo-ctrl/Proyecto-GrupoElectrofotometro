@@ -19,9 +19,14 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 - Procesamiento con ESP32.
 
 # Arquitectura del Sistema 
-![Descripción de la imagen](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/arquitectura.png)
+
+![Arquitectura del sistema](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/ARQUITECTURA.jpg)
+
+
+<h2 align="center">Arquitectura del Sistema</h2>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/arquitectura.png" width="500">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/ARQUITECTURA.jpg" width="700">
 </p>
 
 
@@ -29,11 +34,13 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 # **Diagrama FSM**
 Todavia no se termno de elaborar el sistema
 
-![Descripción de la imagen](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/fsm.png)
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/fsm.png" width="500">
-</p>
+![Diagrama FSM](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/FSM.jpeg)
 
+<h2 align="center">Diagrama FSM</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/FSM.jpeg" width="700">
+</p>
 
 # Descripción del Proyecto
 
