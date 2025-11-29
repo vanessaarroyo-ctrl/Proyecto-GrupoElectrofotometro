@@ -19,6 +19,7 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 - Procesamiento con ESP32.
 
 # Arquitectura del Sistema 
+![Descripción de la imagen](https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/ARQUITECTURA.png)
 
 
 # **Diagrama FSM (para guardar en `/img/fsm.png`)**
