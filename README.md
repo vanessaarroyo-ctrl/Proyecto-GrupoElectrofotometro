@@ -153,10 +153,10 @@ Se empleó el software KiCad para realizar el enrutado correspondiente, permitie
 
 # **Repositorio — Estructura Propuesta**
 
-<h2 align="center">Diagrama FSM</h2>
+<h2 align="center">Repositorio actual</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/estructurarepositorio.png" width="700">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/estructurarepositorio.png" width="100">
 </p>
 
 
