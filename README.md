@@ -129,13 +129,16 @@ Se empleó el software KiCad para realizar el enrutado correspondiente, permitie
 - Diseño 3D en SolidWorks    
 - Implementación de 4 tareas FreeRTOS:
   - `taskKeypad`
-  - `taskLogic`
-  - `taskMotor`
+  - `taskMenu`
   - `taskSensor`
+  - `taskMotor`
+  - `taskLCD`
+  - `taskWiFi`
 - Comunicación mediante colas RTOS:
-  - q_keys
-  - q_motor
-  - q_sensor  
+  - queueKey
+  - queueDisplay
+  - queueMotor
+  - queueWiFi 
 - Movimiento funcional del motor paso a paso  
 - Cálculo básico de absorbancia
 - Optimización del cálculo de absorbancia 
