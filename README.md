@@ -112,8 +112,10 @@ Se empleó el software KiCad para realizar el enrutado correspondiente, permitie
 
 #  **Integrantes y Roles**
 
+|     **INTEGRANTES**          |                    **ROLES**                            |
+|------------------------------|---------------------------------------------------------|
 | **Vanessa Arroyo Fernández** | Desarrollo del sistema, diseño funcional, documentación |
-| **Sarah Chávez Valencia** | Desarrollo del sistema, diseño funcional, documentación |
+| **Sarah Chávez Valencia**    | Desarrollo del sistema, diseño funcional, documentación |
 
 ---
 
