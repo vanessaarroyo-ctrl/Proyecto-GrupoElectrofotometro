@@ -28,7 +28,6 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 
 
 # **Diagrama FSM**
-Todavia no se termno de elaborar el sistema
 
 <h2 align="center">Diagrama FSM</h2>
 
