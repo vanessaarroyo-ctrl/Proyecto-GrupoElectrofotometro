@@ -7,7 +7,8 @@ Este equipo busca ser una alternativa **accesible, confiable y didactica**, espe
 <h2 align="center">Espectrofotómetro en Solid Works</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/producto.png" width="700">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/espectrofotometro.png" 
+  width="700">
 </p>
 
 
@@ -24,10 +25,10 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 - Interfaz LCD + teclado matricial,
 - Procesamiento con ESP32.
 
-<h2 align="center">carcterísticas del Espectrofotómetro</h2>
+<h2 align="center">Características del Espectrofotómetro</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/espectrofotometro.png" width="700">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/producto.png" width="700">
 </p>
 
 
