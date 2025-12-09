@@ -4,6 +4,12 @@ Proyecto desarrollado para la materia **IMT 222 SISTEMAS EMBEBIDOS I*, orientado
 
 Este equipo busca ser una alternativa **accesible, confiable y didactica**, especialmente util para **laboratorios universitarios, practicas estudiantiles e investigacion basica**.
 
+<h2 align="center">Espectrofotómetro en Solid Works</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/producto.png" width="700">
+</p>
+
 
 ## Descripción del Proyecto
 
@@ -17,6 +23,13 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 - Control de filtros mediante motor paso a paso,
 - Interfaz LCD + teclado matricial,
 - Procesamiento con ESP32.
+
+<h2 align="center">carcterísticas del Espectrofotómetro</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/espectrofotometro.png" width="700">
+</p>
+
 
 # Arquitectura del Sistema 
 
