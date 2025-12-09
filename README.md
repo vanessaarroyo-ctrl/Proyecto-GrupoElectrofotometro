@@ -68,7 +68,7 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 ### **Software**
 - ✔ FreeRTOS (tareas, colas, concurrencia)
 - ✔ C/C++ (Arduino Framework)
-- ✔ Visual Studio ()
+- ✔ Visual Studio (PHP)
 - ✔ Arduino IDE / PlatformIO
 - ✔ SolidWorks (diseño mecánico)
 - ✔ Git y GitHub
