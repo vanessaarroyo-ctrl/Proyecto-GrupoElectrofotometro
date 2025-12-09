@@ -1,61 +1,49 @@
 #include <Arduino.h>
 #include "sistema.h"
 
-// Forward
-void setup();
-void loop();
 
-void setup() {
-  Serial.begin(115200);
+// Queues defined here and referenced in sistema.cpp
+QueueHandle_t queueKey = NULL;
+QueueHandle_t queueDisplay = NULL;
+QueueHandle_t queueMotor = NULL;
+QueueHandle_t queueWiFi = NULL;
 
-  // Inicializar LCD
-  lcd.init();
-  lcd.backlight();
-  lcdPrintDirect("STAT FAX 1904+", "Iniciando...");
 
-  pinMode(IN1, OUTPUT);
-  pinMode(IN2, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
+void setup(){
+Serial.begin(115200);
+lcd.init(); lcd.backlight();
 
-  // Inicializar EEPROM y cargar pacientes (función existente)
-  initializeEEPROM();
 
-  // Conectar WiFi (esto puede tardar; se hace en setup como en tu código original)
-  connectWiFi();
+pinMode(IN1, OUTPUT); pinMode(IN2, OUTPUT); pinMode(IN3, OUTPUT); pinMode(IN4, OUTPUT);
 
-  Serial.println(" Iniciando STAT FAX 1904+...");
-  lcdPrintDirect("STAT FAX 1904+", "Sistema listo");
-  delay(1000);
 
-  // Crear colas
-  queueKey = xQueueCreate(20, sizeof(char)); // teclas
-  queueDisplay = xQueueCreate(10, sizeof(DisplayMessage));
-  queueMotor = xQueueCreate(5, sizeof(int));
-  queueWiFi = xQueueCreate(5, sizeof(Patient));
+initializeEEPROM();
 
-  if (!queueKey || !queueDisplay || !queueMotor || !queueWiFi) {
-    Serial.println(" Error creando colas FreeRTOS");
-    while (1) vTaskDelay(pdMS_TO_TICKS(1000));
-  }
 
-  // Crear tareas
-  xTaskCreatePinnedToCore(taskKeypad, "TaskKeypad", 4096, NULL, 3, NULL, 1);
-  xTaskCreatePinnedToCore(taskMenu, "TaskMenu", 8192, NULL, 4, NULL, 1);
-  xTaskCreatePinnedToCore(taskLCD, "TaskLCD", 4096, NULL, 2, NULL, 1);
-  xTaskCreatePinnedToCore(taskMotor, "TaskMotor", 4096, NULL, 2, NULL, 1);
-  xTaskCreatePinnedToCore(taskWiFi, "TaskWiFi", 8192, NULL, 1, NULL, 1);
+// create queues
+queueKey = xQueueCreate(20, sizeof(char));
+queueDisplay = xQueueCreate(10, sizeof(DisplayMessage));
+queueMotor = xQueueCreate(5, sizeof(int));
+queueWiFi = xQueueCreate(5, sizeof(Patient));
 
-  // Ejecutar flujo inicial (igual que antes): solicitar contraseña y seleccionar paciente
-  // Nota: esas funciones usan waitForKeyFromQueue() internamente (no keypad.waitForKey)
-  enterPassword();
-  seleccionarPaciente();
-  menuPrincipal();
 
-  // loop() queda vacío, todo se procesa por tareas/FSM
+if(!queueKey || !queueDisplay || !queueMotor || !queueWiFi){ Serial.println("Error creando colas"); while(1) vTaskDelay(pdMS_TO_TICKS(1000)); }
+
+
+// create tasks
+xTaskCreatePinnedToCore(taskKeypad, "TaskKeypad", 4096, NULL, 3, NULL, 1);
+xTaskCreatePinnedToCore(taskMenu, "TaskMenu", 8192, NULL, 4, NULL, 1);
+xTaskCreatePinnedToCore(taskLCD, "TaskLCD", 4096, NULL, 2, NULL, 1);
+xTaskCreatePinnedToCore(taskMotor, "TaskMotor", 8192, NULL, 2, NULL, 1);
+xTaskCreatePinnedToCore(taskWiFi, "TaskWiFi", 8192, NULL, 1, NULL, 1);
+
+
+// preset default patient
+for(int i=0;i<numPacientes;i++){ if(pacientes[i].id=="P001"){ currentPatientId = pacientes[i].id; currentPatientName = pacientes[i].nombre; currentPatient.id = i+1; break; } }
+
+
+lcdPrint("Sistema listo","Menu principal");
 }
 
-void loop() {
-  // No usar. FreeRTOS maneja tareas.
-  vTaskDelay(pdMS_TO_TICKS(1000));
-}
+
+void loop(){ vTaskDelay(pdMS_TO_TICKS(1000)); }
