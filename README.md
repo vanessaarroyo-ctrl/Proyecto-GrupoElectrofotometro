@@ -71,21 +71,21 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 # **Tecnologías Utilizadas**
 
 ### **Hardware**
- ✔ ESP32 WROOM
- ✔ OPT101 (sensor óptico)
- ✔ Motor paso a paso + driver ULN2003
- ✔ LED de alta intensidad
- ✔ LCD 16x2 (I2C)
- ✔ Teclado matricial 4x4
- ✔ Estructura 3D tipo Stat Fax
+- ✔ ESP32 WROOM
+- ✔ OPT101 (sensor óptico)
+- ✔ Motor paso a paso + driver ULN2003
+- ✔ LED de alta intensidad
+- ✔ LCD 16x2 (I2C)
+- ✔ Teclado matricial 4x4
+- ✔ Estructura 3D tipo Stat Fax
 
 ### **Software**
- ✔ FreeRTOS (tareas, colas, concurrencia)
- ✔ C/C++ (Arduino Framework)
- ✔ Visual Studio (PHP)
- ✔ Arduino IDE / PlatformIO
- ✔ SolidWorks (diseño mecánico)
- ✔ Git y GitHub
+- ✔ FreeRTOS (tareas, colas, concurrencia)
+- ✔ C/C++ (Arduino Framework)
+- ✔ Visual Studio (PHP)
+- ✔ Arduino IDE / PlatformIO
+- ✔ SolidWorks (diseño mecánico)
+- ✔ Git y GitHub
 
 ---
 
@@ -156,7 +156,7 @@ Se empleó el software KiCad para realizar el enrutado correspondiente, permitie
 <h2 align="center">Repositorio actual</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/estructurarepositorio.png" width="100">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/estructurarepositorio.png" width="300">
 </p>
 
 
