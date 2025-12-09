@@ -1,6 +1,6 @@
 # PROTOTIPO DE ESPECTROFOTOMETRO  SPV MEDICAL
 
-Proyecto desarrollado para la materia **IMT 222 SISTEMAS EMBEBIDOS I*, orientado al diseño y validación de un **espectrofotometro de bajo costo**, capaz de medir absorbancia utilizando **tres filtros opticos (rojo, verde y blanco)** y un sistema de control basado en **ESP32 + FreeRTOS**.
+Proyecto desarrollado para la materia **IMT 222 SISTEMAS EMBEBIDOS I*, orientado al diseño y validación de un **espectrofotometro de bajo costo**, capaz de medir absorbancia utilizando **tres filtros opticos (rojo, verde, blanco y transparente)** y un sistema de control basado en **ESP32 + FreeRTOS**.
 
 Este equipo busca ser una alternativa **accesible, confiable y didactica**, especialmente util para **laboratorios universitarios, practicas estudiantiles e investigacion basica**.
 
@@ -20,14 +20,11 @@ Este proyecto propone el desarrollo de un **espectrofotómetro tipo Stat Fax**, 
 
 # Arquitectura del Sistema 
 
-
-
 <h2 align="center">Arquitectura del Sistema</h2>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/ARQUITECTURA.jpg" width="700">
 </p>
-
 
 
 # **Diagrama FSM**
@@ -36,7 +33,8 @@ Todavia no se termno de elaborar el sistema
 <h2 align="center">Diagrama FSM</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/FSM.jpeg" width="700">
+  <img src="https://raw.githubusercontent.com/vanessaarroyo-ctrl/Proyecto-GrupoElectrofotometro/main/img/FSM.png" 
+  width="700">
 </p>
 
 # Descripción del Proyecto
@@ -47,9 +45,11 @@ Este proyecto implementa un **espectrofotómetro tipo Stat Fax**, diseñado para
 
 - Económico
 - Preciso (±1–2% con OPT101)
-- Amigable para estudiantes
+- Optimizar trazabilidad
+- Amigable para el usuario
 - Fácil de operar
 - Basado en hardware accesible (ESP32)
+- Digitalización de resultados
 
 Incluye control automático de filtros, interfaz intuitiva y funcionalidades que simulan un espectrofotómetro clínico real.
 
@@ -61,7 +61,7 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 - ✔ ESP32 WROOM
 - ✔ OPT101 (sensor óptico)
 - ✔ Motor paso a paso + driver ULN2003
-- ✔ LEDs de alta intensidad (rojo, verde, blanco)
+- ✔ LED de alta intensidad
 - ✔ LCD 16x2 (I2C)
 - ✔ Teclado matricial 4x4
 - ✔ Estructura 3D tipo Stat Fax
@@ -69,6 +69,7 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 ### **Software**
 - ✔ FreeRTOS (tareas, colas, concurrencia)
 - ✔ C/C++ (Arduino Framework)
+- ✔ Visual Studio ()
 - ✔ Arduino IDE / PlatformIO
 - ✔ SolidWorks (diseño mecánico)
 - ✔ Git y GitHub
@@ -101,20 +102,17 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
   - q_sensor  
 - Movimiento funcional del motor paso a paso  
 - Cálculo básico de absorbancia
-
-### EN PROGRESO
-- Optimización del cálculo de absorbancia  
+- Optimización del cálculo de absorbancia 
 - Validación experimental con cubetas reales  
-- Ajuste de tiempos y sensibilidad  
-- Integración final con gabinete diseñado en 3D 
-- Lectura del OPT101 con promedio de 10 muestras 
-- Implementación del FSM en proces
-
-### PENDIENTE
+- Ajuste de tiempos y sensibilidad 
+- Implementación del FSM
 - Validación con curva de Beer–Lambert  
-- Pruebas clínicas simuladas  
+- Pruebas clínicas simuladas
 - Implementación de envío automático de resultados  
 - Documentación final del proceso de calibración  
+
+### PENDIENTE
+- Integración final con gabinete diseñado en 3D 
 
 
 # **Repositorio — Estructura Propuesta**
@@ -131,7 +129,7 @@ Incluye control automático de filtros, interfaz intuitiva y funcionalidades que
 
 # Conclusión
 
-Este proyecto constituye una herramienta robusta y accesible para instituciones educativas y laboratorios básicos, integrando principios de espectrofotometría, electrónica biomédica, diseño mecánico y programación embebida con FreeRTOS.
+Este proyecto constituye un equipo ideal y accesible para instituciones educativas y laboratorios básicos, integrando principios de espectrofotometría, electrónica biomédica, diseño mecánico y programación embebida con FreeRTOS.
 
 ---
 
